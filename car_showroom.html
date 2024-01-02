@@ -18,14 +18,17 @@
 
     <header class="header">
 
-        <i id="menu-btn" class="fa-solid fa-bars" onclick="changeicon(this)"></i>
+        <i id="menu-btn" class="fa-solid fa-bars"></i>
 
+        <!-- <button id="menu-btn" onclick="hide()">
+            Menu
+            <i class="fa-solid fa-bars"></i>
+        </button> -->
 
-        <!-- <i class="fa-solid fa-xmark"></i> -->
 
         <a href="#" class="logo"><span>YOUR</span>CAR</a>
 
-        <nav class="navbar">
+        <nav class="navbar" id="navbar">
             <a href="#Home">Home</a>
             <a href="#Vehicles">Vehicles</a>
             <a href="#Services">Services</a>
@@ -46,57 +49,53 @@
 
 
 
-    <!-- Footer Section -->
-    <section class="footer">
+    <!-- LOGIN FORM STARS -->
 
-        <div class="box-container">
+    <div class="login-form">
 
-            <div class="box">
-                <h3>Our Branches</h3>
-                <a href="#"><i class="fas fa-map-marker-alt"></i> Mumbai </a>
-                <a href="#"><i class="fas fa-map-marker-alt"></i> Ahmadnagar </a>
-                <a href="#"><i class="fas fa-map-marker-alt"></i> Pune </a>
-                <a href="#"><i class="fas fa-map-marker-alt"></i> Nagpur </a>
-                <a href="#"><i class="fas fa-map-marker-alt"></i> Kolhapur </a>
+    <span id="close-login-form" class="fa-solid fa-xmark"></span>
+
+    <i class="fa-solid fa-xmark"></i>
+    <form action="">
+            <h3>User login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p>Forget your password <a href="#">click here</a></p>
+            <input type="submit" value="login" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
             </div>
+            <p>don't have an account <a href="#">create</a></p>
 
-            <div class="box">
-                <h3>Quick links</h3>
-                <a href="#"><i class="fas fa-arrow-right"></i> Home </a>
-                <a href="#"><i class="fas fa-arrow-right"></i> Vehicles </a>
-                <a href="#"><i class="fas fa-arrow-right"></i> Services </a>
-                <a href="#"><i class="fas fa-arrow-right"></i> featured </a>
-                <a href="#"><i class="fas fa-arrow-right"></i> Reviews </a>
-                <a href="#"><i class="fas fa-arrow-right"></i> Contact </a>
-            </div>
+        </form>
 
-            <div class="box">
-                <h3>Quick links</h3>
-                <a href="#"><i class="fas fa-phone"></i> +123-456-7890 </a>
-                <a href="#"><i class="fas fa-phone"></i> +111-222-4444 </a>
-                <a href="#"><i class="fas fa-envelope"></i> yourcar.com </a>
-                <a href="#"><i class="fas fa-envelope"></i> services@yourcar.com </a>
-            </div>
+    </div>
 
-            <div class="box">
-                <h3>Quick links</h3>
-                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i> facebook
-                </a>
-                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i> twitter </a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> instagram
-                </a>
-                <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> linkedin
-                </a>
-
-            </div>
-
-        </div>
-        <div class="credit">By Your Car | All right reserve</div>
-
-    </section>
+    <!-- LOGIN FORM ENDS -->
 
 
-    <script src="car_showroom.css"></script>
+
+
+    <!-- HOME SECTION START -->
+
+
+
+
+
+    <!-- HOME SECTION ENDS -->
+
+
+
+
+
+
+    
+
+    <script src="car_showroom.js"></script>
+
+
 </body>
 
 </html>

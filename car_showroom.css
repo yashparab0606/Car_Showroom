@@ -22,7 +22,7 @@
     outline: none;
     border: none;
     text-transform: capitalize;
-    /* transition: all .2s linear; */
+    transition: all .2s linear;
 }
 
 
@@ -34,83 +34,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.header {
-    position: relative;
-    padding: 0px 20px;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-}
-
-.header .logo {
-    text-decoration: none;
-    font-size: 2.5rem;
-    color: var(--black);
-    font-weight: bold;
-}
-
-.header .logo span {
-    color: var(--yellow);
-    font-size: 4rem;
-}
-
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-} */
-
-.header #menu-btn {
-    font-size: 2.5em;
-    color: var(--black);
-    cursor: pointer;
-    display: none;
-}
-
-#menu-btn .fa-times {
-    transform: rotate(180degre);
-}
-
-
-.header #menu-btn:hover {
-    cursor: pointer;
-}
-
-.header .navbar {
-    display: flex;
-    background-color: #fffefe;
-    padding: 10px 4px;
-    border-radius: 8px;
-    justify-content: space-evenly;
-}
-
-.header .navbar.active {
-    display: block;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
-
-.header .navbar a {
-    font-size: 2rem;
-    margin: 0 4px;
-    color: var(--black);
-    text-decoration: none;
-    /* background-color: #eee2e2; */
-    padding: 4px 10px;
-    border-radius: 8px;
-}
-
-.header .navbar a:hover {
-    color: var(--yellow);
-}
-
-#login-btn .btn {
+.btn {
     display: inline-block;
     margin-top: .1rem;
     border-radius: 1rem;
@@ -122,8 +46,51 @@ html {
     padding: .8rem 1.5rem;
 }
 
-#login-btn .btn:hover {
+.btn:hover {
     background-color: var(--yellow);
+}
+
+.header {
+    position: fixed;
+    padding: 0px 20px;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header .logo span {
+    color: var(--yellow);
+    font-size: 4rem;
+}
+
+.header .navbar a {
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0 4px;
+    color: var(--black);
+    text-decoration: none;
+    /* background-color: #eee2e2; */
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.header .navbar a:hover {
+    color: var(--yellow);
+    font-size: 2.2rem;
+    font-weight: bold;
 }
 
 .header .btn {
@@ -137,124 +104,165 @@ html {
     display: none;
 }
 
+#menu-btn {
+    font-size: 3rem;
+    background: #fff;
+    color: var(--black);
+    cursor: pointer;
+    display: none;
+}
+
+.header.active {
+    box-shadow: var(--box-shadow);
+    padding: 2rem 9%;
+}
+
+#menu-btn .fa-times {
+    transform: rotate(180degre);
+}
 
 
-/* #head {
-    text-align: center;
-} */
+.header #menu-btn:hover {
+    cursor: pointer;
+}
 
-/* nav a {
-    color: white;
-    text-decoration: none;
-    padding: 4px 10px;
-    margin: 1px 10px;
-    font-weight: 400;
-    border: 2px solid black;
-} */
+/* .header .navbar { */
+/* display: flex; */
+/* background-color: #fffefe; */
+/* padding: 10px 4px; */
+/* border-radius: 8px; */
+/* justify-content: space-evenly; */
+/* } */
 
-/* footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* LOGIN FORM CSS START */
+
+.login-form {
     position: fixed;
-    bottom: 0;
+    top: -105%;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
     width: 100%;
-} */
+    background-color: rgba(255, 255, 255, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
 
-/* .container {
-    max-width: 1200px;
-    height: 300px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-} */
+.login-form.active {
+    top: 0;
+    opacity: 1;
+}
 
+.login-form form {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    border: var(--border);
+    text-align: center;
+    width: 40rem;
+}
 
+.login-form form .buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
 
-/* h2 {
+.login-form form .btn {
+    /* for google and facebook */
     display: block;
-    color: black;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-} */
-
-/* .car-card {
-    width: 40%;
-    height: 80%;
-    margin-bottom: 20px;
-    border: 1px solid #b7b7b7;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: transform 0.3s;
-} */
-
-/* .car-card:hover {
-    transform: scale(1.05);
-} */
-
-/* .car-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-} */
-
-/* .car-details {
-
-    height: 130px;
-    padding: 15px;
-} */
-
-
-
-
-/*FOOTER SECTION*/
-.footer {
-    margin-bottom: 0;
-    background-color: var(--light-yellow);
-}
-
-.footer .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1rem 0;
-}
-
-.footer .box-container .box h3 {
-    color: var(--black);
-    font-size: 1.7rem;
+    margin: 5rem 0;
+    border: var(--border);
     padding: 1rem 0;
-}
-
-.footer .box-container .box a {
-    color: var(--black);
-    font-size: 1.3rem;
-    display: block;
-    padding: 1rem 0;
-}
-
-.footer .box-container .box a i {
-    padding-right: 2rem;
-    color: var(--black);
-}
-
-.footer .box-container .box a:hover i {
-    padding-right: 3rem;
-
-}
-
-.footer .credit {
-    border-top: var(--border);
-    padding: .8rem;
-    padding-top: 1rem;
-    margin-top: 1rem;
+    text-decoration: none;
     font-size: 1.5rem;
 }
+
+.login-form form h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+
+.login-form form .box {
+    margin: 2rem 0;
+    width: 100%;
+    text-transform: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: var(--border);
+    border-radius: 5rem;
+}
+
+.login-form form p {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.login-form form p a {
+    text-decoration: underline;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #fff200;
+}
+
+.login-form #close-login-form {
+    position: absolute;
+    top: 5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* for login button */
+/* .login-form form .btn {
+margin: 1rem 0;
+padding: 1rem 2rem;
+width: 50%;
+border: var(--border);
+font-size: 1.6rem;
+color: rgb(0, 0, 0);
+text-transform: none;
+border-radius: 5px;
+} */
+
+
+/*for login button but it will also work for google and facebook*/
+/* .login-form form .btn:hover {
+background-color: #fff200;
+font-size: 1.8rem;
+font-weight: 600;
+} */
+
+
+
+
+
+/* LOGIN FORM CSS ENDS */
+
 
 
 
@@ -282,11 +290,24 @@ html {
         padding: 2rem;
     }
 
-
+    .header.active {
+        padding: 2rem;
+    }
 
 }
 
 @media(max-width:800px) {
+
+    #menu-btn {
+        font-size: 2.5em;
+        cursor: pointer;
+        display: block;
+    }
+
+    #menu-btn.fa-times {
+        transform: rotate(90deg);
+    }
+
     .header #login-btn i {
         display: block;
     }
@@ -295,33 +316,37 @@ html {
         display: none;
     }
 
-    .header #menu-btn {
-        font-size: 2.5em;
-        cursor: pointer;
-        display: block;
-    }
-
     .header .navbar {
         position: absolute;
         top: 99%;
         left: 0;
         right: 0;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        background: #fff;
         border-top: var(--border);
-        display: block;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        /*Hide the navbar*/
+
+    }
+
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        /*to display full block navbar*/
     }
 
     .header .navbar a {
         display: block;
-        /* clip-path: polygon(0 0, 100% 0, 100% 0 0 0); */
         font-size: 2rem;
         margin: 2rem;
+        /* clip-path: polygon(0 0, 100% 0, 100% 0 0 0);*/
+        /* kuch farak nahi pad raha */
     }
+
+
 }
 
 @media(max-width:660px) {
     html {
-        font-size: 50%;
+        font-size: 40%;
     }
 
     .header .navbar a {
