@@ -14,6 +14,19 @@ document.querySelector('#close-login-form').onclick = () => {
     document.querySelector('.login-form').classList.toggle('active');
 }
 
+document.querySelector('#create-form-close').onclick = () => {
+    document.querySelector('.create-form').classList.toggle('active');
+}
+
+document.querySelector('#login2').onclick = () => {
+    document.querySelector('.create-form').classList.toggle('active');
+
+}
+
+document.querySelector('#create-btn').onclick = () => {
+    document.querySelector('.create-form').classList.toggle('active');
+}
+
 window.onscroll = () => {
 
     if (window.scrollY > 0) {
