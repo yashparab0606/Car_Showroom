@@ -130,19 +130,13 @@ section {
     cursor: pointer;
 }
 
-/* .header .navbar { */
-/* display: flex; */
-/* background-color: #fffefe; */
-/* padding: 10px 4px; */
-/* border-radius: 8px; */
-/* justify-content: space-evenly; */
-/* } */
-
-
-
-
-
-
+/* .header .navbar {
+display: flex;
+background-color: #fffefe;
+padding: 10px 4px;
+border-radius: 8px;
+justify-content: space-evenly;
+} */
 
 
 
@@ -298,8 +292,9 @@ font-weight: 600;
 
 }
 
-/* HOME SECTION CSS ENDS */
 
+
+/* HOME SECTION CSS ENDS */
 
 
 

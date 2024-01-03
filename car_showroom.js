@@ -56,8 +56,8 @@ document.querySelector('.home').onmousemove = (e) => {
     document.querySelectorAll('.home-page').forEach(elm => {
         let speed = elm.getAttribute('data-speed');
 
-        let x = (window.innerWidth - e.pageX * speed) / 110;
-        let y = (window.innerHeight - e.pageY * speed) / 110;
+        let x = (window.innerWidth - e.pageX * speed) / 300;
+        let y = (window.innerHeight - e.pageY * speed) / 300;
 
         elm.style.transform = `translateX(${y}px) translateY(${x}px)`;
 
