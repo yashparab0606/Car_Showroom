@@ -229,7 +229,8 @@ justify-content: space-evenly;
     text-decoration: underline;
     padding: 1rem 0;
     font-size: 1.5rem;
-    color: #fff200;
+    color: #d84a4a;
+font-weight: 700;
 }
 
 .login-form #close-login-form {
@@ -267,6 +268,105 @@ font-weight: 600;
 
 /* LOGIN FORM CSS ENDS */
 
+
+
+/* CREATE ACCOUNT CSS START */
+
+.create-form {
+    position: fixed;
+    top: -105%;
+    left: 0;
+    z-index: 1111;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.create-form.active {
+    top: 0;
+    opacity: 1;
+}
+
+.create-form form {
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background: #fff;
+    border: var(--border);
+    text-align: center;
+    width: 40rem;
+}
+
+.create-form form .btn {
+    /* for google and facebook */
+    display: block;
+    width: 100%;
+    margin: 4rem 0;
+    border: var(--border);
+    padding: 1rem 0;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #e59d9d;
+}
+
+.create-form form h3 {
+    color: var(--black);
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.create-form form .box {
+    margin: 1.5rem 0;
+    width: 100%;
+    text-transform: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border: var(--border);
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.create-form form .btn {
+    background: #cd8b88;
+    width: 50%;
+    margin: 3rem auto;
+    font-size: 1.8rem;
+}
+
+.create-form form .btn:hover {
+    width: 55%;
+    background: #e59d9d;
+    font-size: 2rem;
+    font-weight: 600
+}
+
+.create-form form p {
+    font-size: 1.4rem;
+}
+
+.create-form form p a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--yellow);
+}
+
+.create-form #create-form-close {
+    position: absolute;
+    top: 5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* CREATE ACCOUNT END */
 
 
 /* HOME SECTION CSS STARTS */
