@@ -292,6 +292,19 @@ font-weight: 600;
 
 }
 
+.home a {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    margin: 5rem 5rem;
+    margin-bottom: 10rem;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 1rem;
+    background-color: #d7b392;
+    /* border: 1px solid #000000; */
+}
+
 
 
 /* HOME SECTION CSS ENDS */
