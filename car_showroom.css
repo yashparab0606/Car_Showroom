@@ -6,10 +6,10 @@
 @import url('https://kit.fontawesome.com/a076d05399.js');
 
 :root {
-    --yellow: #fff200;
-    --light-yellow: #f1e798;
+    --yellow: rgb(255, 0, 0);
+    --light-yellow: #d84a4a;
     --black: rgb(0, 0, 0);
-    --border: 1px solid rgba(0, 0, 0, .1);
+    --border: 1px solid rgba(0, 0, 0, .3);
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
 }
 
@@ -22,7 +22,7 @@
     outline: none;
     border: none;
     text-transform: capitalize;
-    transition: all .2s linear;
+    /* transition: all .1s linear; */
 }
 
 
@@ -32,6 +32,10 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
+}
+
+section {
+    padding: 2rem 9%;
 }
 
 .btn {
@@ -194,6 +198,11 @@ html {
     padding: 1rem 0;
     text-decoration: none;
     font-size: 1.5rem;
+    background-color: #e59d9d;
+}
+
+.login-form form .btn:hover {
+    background-color: #da4646;
 }
 
 .login-form form h3 {
@@ -204,6 +213,7 @@ html {
 }
 
 
+
 .login-form form .box {
     margin: 2rem 0;
     width: 100%;
@@ -212,7 +222,7 @@ html {
     font-size: 1.5rem;
     padding: 1rem 2rem;
     border: var(--border);
-    border-radius: 5rem;
+    border-radius: 5px;
 }
 
 .login-form form p {
@@ -265,7 +275,83 @@ font-weight: 600;
 
 
 
+/* HOME SECTION CSS STARTS */
 
+
+.home {
+    padding-top: 10rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.home h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 2rem;
+}
+
+.home img {
+    width: 100%;
+    margin: 1rem 0;
+
+
+}
+
+/* HOME SECTION CSS ENDS */
+
+
+
+
+
+
+/*FOOTER SECTION CSS SARTS*/
+.footer {
+    margin-bottom: 0;
+    background-color: rgb(247, 184, 184);
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem 0;
+}
+
+.footer .box-container .box h3 {
+    color: var(--black);
+    font-size: 1.7rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 1.3rem;
+    display: block;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+    padding-right: 1.5rem;
+    color: var(--black);
+}
+
+.footer .box-container .box a:hover i {
+
+    padding-right: 3rem;
+
+}
+
+.footer .credit {
+    border-top: var(--border);
+    padding: .8rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/*FOOTER SECTION CSS ENDS*/
 
 
 
@@ -291,6 +377,10 @@ font-weight: 600;
     }
 
     .header.active {
+        padding: 2rem;
+    }
+
+    section {
         padding: 2rem;
     }
 
