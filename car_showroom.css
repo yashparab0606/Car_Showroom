@@ -413,7 +413,7 @@ font-weight: 600;
 #vehicles {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .car-card {
@@ -421,10 +421,10 @@ font-weight: 600;
     background-color: #f0f0f0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    padding: 20px;
-    width: 400px;
+    padding: 10px;
+    width: 420px;
     /* Adjust the width as needed */
-    height: 600px;
+    height: 550px;
     /* Adjust the height as needed */
     border-radius: 8px;
     overflow: hidden;
@@ -570,6 +570,18 @@ font-weight: 600;
     .header .navbar a {
         margin: 5px;
         font-size: 3rem;
+
+    }
+}
+
+@media(max-width:350px) {
+    html {
+        font-size: 35%;
+    }
+
+    .header .navbar a {
+        margin: 0;
+        font-size: 1.5rem;
 
     }
 }
