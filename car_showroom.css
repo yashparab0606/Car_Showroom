@@ -410,7 +410,26 @@ font-weight: 600;
 /* HOME SECTION CSS ENDS */
 
 
+#vehicles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+.car-card {
+    display: inline-block;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    width: 400px;
+    /* Adjust the width as needed */
+    height: 600px;
+    /* Adjust the height as needed */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
 
 
 /*FOOTER SECTION CSS SARTS*/
