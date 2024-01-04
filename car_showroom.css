@@ -411,6 +411,7 @@ font-weight: 600;
 
 
 #vehicles {
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
