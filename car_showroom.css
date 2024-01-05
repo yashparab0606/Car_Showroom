@@ -434,6 +434,11 @@ font-weight: 600;
 
 /* REVIEWS SECTION CSS */
 
+.review h1 {
+    text-align: center;
+    font-size: 4rem;
+}
+
 .review .review-slider {
     padding-bottom: 3rem;
 }
@@ -460,7 +465,7 @@ font-weight: 600;
 }
 
 .review .review-slider .box .content h3 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: black;
 }
 
