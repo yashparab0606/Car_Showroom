@@ -476,10 +476,11 @@ font-weight: 600;
 
 /* CONTACT CSS STARTS */
 
-#contact h3{
+#contact h3 {
     text-align: center;
     font-size: 4rem;
 }
+
 .contact .row {
     margin: 5rem;
     display: flex;
