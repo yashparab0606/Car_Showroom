@@ -409,6 +409,69 @@ font-weight: 600;
 
 /* HOME SECTION CSS ENDS */
 
+/*css styling of icon*/
+
+.icons-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
+    gap: 1rem;
+    background: rgb(255, 255, 255);
+}
+
+.icons-container .icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+}
+
+.icons-container .icons i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    border: 50%;
+    background: #eee;
+    color: var(--black);
+    text-align: center;
+}
+
+.icons-container .icons .content h3 {
+    color: var(--yellow);
+    font-size: 1rem;
+}
+
+.icons-container .icons .content p {
+    color: var(--light-color);
+    font-size: 1.4rem;
+}
+
+.icons-container .icons:hover {
+    background: rgb(220, 163, 155);
+    color: #000000;
+}
+
+.icons-container .icons:hover i {
+    background: #f3c9c9 ;
+}
+
+.icons-container .icons:hover .content h3 {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.icons-container .icons:hover .content p {
+    color: black;
+font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
 
 #vehicles {
     display: flex;
