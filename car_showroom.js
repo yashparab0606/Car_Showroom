@@ -87,3 +87,9 @@ document.querySelector('.home').onmouseleave = (e) => {
     });
 
 }
+
+function toggleDetails(card) {
+    var details = card.querySelector('.service-details');
+    details.classList.toggle('visible');
+}
+
