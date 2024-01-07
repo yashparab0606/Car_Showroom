@@ -495,6 +495,33 @@ font-size: 1.5rem;
 }
 
 
+.service-details {
+    display: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    background-color: #8be1da;
+}
+
+/* Show service details when 'visible' class is present */
+.service-details.visible {
+    display: block;
+}
+
+/* Style for service cards */
+.service-card {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #1b1717;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.service-card:hover {
+    background-color: #c98787;
+}
+
+
 /* REVIEWS SECTION CSS */
 
 .review h1 {
@@ -601,6 +628,8 @@ font-size: 1.5rem;
 
 
 /* CONTACT CSS ENDS */
+
+
 
 
 
