@@ -8,9 +8,12 @@
 :root {
     --yellow: rgb(255, 0, 0);
     --light-yellow: #d84a4a;
+    --red-shade: rgb(255, 0, 0);
+    --light-red-shade: #d84a4a;
     --black: rgb(0, 0, 0);
     --border: 1px solid rgba(0, 0, 0, .3);
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --light-color: rgba(47, 45, 45, 0.936);
 }
 
 * {
@@ -36,6 +39,27 @@ html {
 
 section {
     padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+}
+
+.heading span {
+    position: relative;
+    z-index: 0;
+}
+
+.heading span::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 .btn {
@@ -93,7 +117,7 @@ section {
 
 .header .navbar a:hover {
     color: var(--yellow);
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
     font-weight: bold;
 }
 
@@ -415,19 +439,21 @@ font-weight: 600;
     padding-top: 4rem;
     padding-bottom: 4rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(2rem, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 2fr));
+    gap: 1.5rem;
     background: rgb(255, 255, 255);
+    align-items: center;
 }
 
 .icons-container .icons {
     display: flex;
     align-items: center;
-    gap: 2rem;
-    padding: 2rem 1rem;
+    gap: 1.5rem;
+    padding: 2rem;
     background: #fff;
     box-shadow: var(--box-shadow);
     border-radius: 1rem;
+    justify-content: center;
 }
 
 .icons-container .icons i {
@@ -437,6 +463,7 @@ font-weight: 600;
     font-size: 3rem;
     border: 50%;
     background: #eee;
+    border-radius: 1rem;
     color: var(--black);
     text-align: center;
 }
@@ -457,7 +484,7 @@ font-weight: 600;
 }
 
 .icons-container .icons:hover i {
-    background: #f3c9c9 ;
+    background: #f3c9c9;
 }
 
 .icons-container .icons:hover .content h3 {
@@ -465,35 +492,75 @@ font-weight: 600;
     font-size: 1.2rem;
     font-weight: 600;
 }
+
 .icons-container .icons:hover .content p {
     color: black;
-font-size: 1.5rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 
 
-#vehicles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.Vehicles .vehicles-s {
+    padding-bottom: 5rem;
 }
 
-.car-card {
-    display: inline-block;
-    background-color: #f0f0f0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    padding: 10px;
-    width: 420px;
-    /* Adjust the width as needed */
-    height: 550px;
-    /* Adjust the height as needed */
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
+.Vehicles .vehicles-s .box {
+    text-align: center;
+
 }
 
+.Vehicles .vehicles-s .box img {
+    width: 100%;
+    opacity: .5;
+    transform: scale(.8);
+}
+
+.Vehicles .vehicles-s .box .content {
+    /* opacity: 0; */
+    transform: scale(0);
+    padding-top: 1rem;
+}
+
+.Vehicles .vehicles-s .swiper-slide-active img {
+    opacity: 1;
+    transform: scale(1);
+}
+.Vehicles .vehicles-s .swiper-slide-active .content {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.Vehicles .vehicles-s .box .content h3 {
+    font-size: 2rem;
+}
+
+.Vehicles .vehicles-s .box .content .price {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--red-shade);
+    padding: 1rem;
+}
+
+.Vehicles .vehicles-s .box .content .price span {
+    font-size: 2rem;
+    font-weight: normal;
+    color: rgb(20, 18, 18);
+}
+
+.Vehicles .vehicles-s .box .content p {
+    font-size: 1.6rem;
+    padding: 1rem;
+    padding-top: 1.rem;
+    border-top: var(--border);
+    color: var(--light-color);
+}
+
+.Vehicles .vehicles-s .box .content p span {
+    color: var(--light-red-shade);
+    font-size: .8rem;
+    padding: .5rem;
+}
 
 /* REVIEWS SECTION CSS */
 
@@ -747,7 +814,7 @@ font-size: 1.5rem;
 
 @media(max-width:350px) {
     html {
-        font-size: 35%;
+        font-size: 40%;
     }
 
     .header .navbar a {

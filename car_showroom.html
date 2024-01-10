@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Your Car Showroom</title>
 
 </head>
@@ -34,7 +35,7 @@
             <a href="#Services">Services</a>
             <a href="#featured">featured</a>
             <a href="#review">Reviews</a>
-            <a href="#Contact">Contact</a>
+            <a href="#contact">Contact</a>
         </nav>
 
         <div id="login-btn">
@@ -116,7 +117,7 @@
     <!-- HOME SECTION ENDS -->
 
 
-<!-- ICONS TO TELL MORE ABOUT OUR Showroom  -->
+    <!-- ICONS TO TELL MORE ABOUT OUR Showroom  -->
 
     <section class="icons-container">
         <div class="icons">
@@ -151,197 +152,118 @@
             </div>
         </div>
     </section>
-    
+
     <!-- VEHICLES SECTION STARTS -->
 
-    <section id="Vehicles">
+    <section id="Vehicles" class="Vehicles">
 
+        <h1 class="heading">Demanded <span>Vehicles</span></h1>
 
+        <div class="swiper vehicles-s">
 
-        <div class="car-card">
-            <style>
+            <div class="swiper-wrapper">
 
-            </style>
+                <div class="swiper-slide box">
+                    <img src="images/harrier-fsv.webp" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span> 100000/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
 
+                <div class="swiper-slide box">
+                    <img src="images/Nexon_red.jpg" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span> /-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
 
-            <img src="images/harrier-fsv.webp" alt="Car 1" class="car-image" id="car1-image" style="width: 400px;"
-                height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car1-image', 's_front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car1-image', 'side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car1-image', 'back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3>car </h3>
-                <h3>Price: </h3>
-                <p>Seating Capacity :</p>
-                <p>Range:</p>
-                <p>Color: </p>
+                <div class="swiper-slide box">
+                    <img src="images/punch-fv.webp" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span> /-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/Thar-fv.jpg" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span> /-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/Tiago-EV_fv.jpg" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span> /-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/XUV_700.webp" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span> /-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
 
             </div>
+            <div class="swiper-pagination"></div>
+
         </div>
 
-        <div class="car-card">
-            <img src="images/punch-fv.webp" alt="Car 2" class="car-image" id="car2-image" style="width: 400px;"
-                height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car2-image', 'car2front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car2-image', 'car2side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car2-image', 'car2back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3>car model</h3>
-                <p>Price:Rs. </p>
-                <p>Engine:</p>
-                <p>Transmission:c</p>
-                <p>Color: </p>
-            </div>
-        </div>
-
-        <div class="car-card">
-            <img src="images/Nexon_red.jpg" alt="Car 3 Front View" class="car-image" id="car3-image"
-                style="width: 400px;" height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3>Car model</h3>
-                <p>Price: </p>
-                <p>Engine:</p>
-                <p>Transmission: </p>
-                <p>Color: </p>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="images/Thar-fv.jpg" alt="Car 3 Front View" class="car-image" id="car3-image" style="width: 400px;"
-                height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3></h3>
-                <p>Price:</p>
-                <p>Engine: </p>
-                <p>Transmission:</p>
-                <p>Color: </p>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="images/Tiago-EV_fv.jpg" alt="Car 3 Front View" class="car-image" id="car3-image"
-                style="width: 400px;" height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3>Car Model </h3>
-                <p>Price: </p>
-                <p>Engine: </p>
-                <p>Transmission: </p>
-                <p>Color: </p>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="images/XUV_700.webp" alt="Car 3 Front View" class="car-image" id="car3-image"
-                style="width: 400px;" height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3>Car Model </h3>
-                <p>Price: </p>
-                <p>Engine: </p>
-                <p>Transmission: </p>
-                <p>Color: </p>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="images/range-rover-sport.jpg" alt="Car 3 Front View" class="car-image" id="car3-image"
-                style="width: 400px;" height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3>Car Model 3</h3>
-                <p>Price: </p>
-                <p>Engine:</p>
-                <p>Transmission: </p>
-                <p>Color: </p>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="3front.jpg" alt="Car 3 Front View" class="car-image" id="car3-image" style="width: 400px;"
-                height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3>Car Model </h3>
-                <p>Price: </p>
-                <p>Engine: 2.5L </p>
-                <p>Transmission: </p>
-                <p>Color: </p>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="3front.jpg" alt="Car 3 Front View" class="car-image" id="car3-image" style="width: 400px;"
-                height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3>Car Model </h3>
-                <p>Price: </p>
-                <p>Engine: 2.5L </p>
-                <p>Transmission: </p>
-                <p>Color: </p>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="3front.jpg" alt="Car 3 Front View" class="car-image" id="car3-image" style="width: 400px;"
-                height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3>Car Model </h3>
-                <p>Price: </p>
-                <p>Engine: </p>
-                <p>Transmission: </p>
-                <p>Color: </p>
-            </div>
-        </div>
-        <div class="car-card">
-            <img src="3front.jpg" alt="Car 3 Front View" class="car-image" id="car3-image" style="width: 400px;"
-                height="400">
-            <div class="car-views">
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3front.jpg')">Front</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3side.jpg')">Side</button>
-                <button class="car-view-button" onclick="changeCarView('car3-image', '3back.jpg')">Back</button>
-            </div>
-            <div class="car-details">
-                <h3>Car Model </h3>
-                <p>Price: </p>
-                <p>Engine: </p>
-                <p>Transmission: </p>
-                <p>Color: </p>
-            </div>
-        </div>
     </section>
 
     <!-- VEHICLEs SECTION ENDS -->
@@ -487,12 +409,12 @@
 
             <div class="box">
                 <h3>Quick links</h3>
-                <a href="#"><i class="fas fa-arrow-right"></i> Home </a>
-                <a href="#"><i class="fas fa-arrow-right"></i> Vehicles </a>
+                <a href="#Home"><i class="fas fa-arrow-right"></i> Home </a>
+                <a href="#Vehicles"><i class="fas fa-arrow-right"></i> Vehicles </a>
                 <a href="#"><i class="fas fa-arrow-right"></i> Services </a>
                 <a href="#"><i class="fas fa-arrow-right"></i> featured </a>
-                <a href="#"><i class="fas fa-arrow-right"></i> Reviews </a>
-                <a href="#"><i class="fas fa-arrow-right"></i> Contact </a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> Reviews </a>
+                <a href="#contact"><i class="fas fa-arrow-right"></i> Contact </a>
             </div>
 
             <div class="box">
@@ -525,7 +447,7 @@
 
     <!-- FOOTER SECTION HTML ENDS -->
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
     <script src="car_showroom.js"></script>
