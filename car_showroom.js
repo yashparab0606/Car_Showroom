@@ -88,6 +88,12 @@ document.querySelector('.home').onmouseleave = (e) => {
 
 }
 
+function toggleDetails(card) {
+    var details = card.querySelector('.service-details');
+    details.classList.toggle('visible');
+}
+
+
 var swiper = new Swiper(".vehicles-s", {
     slidesPerView: 1,
     spaceBetween: 20,
