@@ -570,6 +570,50 @@ font-weight: 600;
     background-color: #8be1da;
 }
 
+
+
+.featured .featured-slider {
+    padding: 1rem;
+    padding-bottom: 4rem;
+}
+
+.featured .featured-slider .box {
+    text-align: center;
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: 1rem;
+}
+
+.featured .featured-slider .box img {
+    /* height: 13rem; */
+    width: 100%;
+}
+
+.featured .featured-slider .box:hover img {
+    transform: scale(.9);
+}
+
+.featured .featured-slider .box h3 {
+    font-size: 2.3rem;
+    color: black;
+}
+
+.featured .featured-slider .box .stars {
+    padding: 1rem;
+}
+
+.featured .featured-slider .box i {
+    font-size: 2rem;
+    color: var(--red-shade);
+}
+
+.featured .featured-slider .box .price {
+    font-size: 1.8rem;
+
+}
+
+
 /* Show service details when 'visible' class is present */
 .service-details.visible {
     display: block;
