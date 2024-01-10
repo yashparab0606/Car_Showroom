@@ -588,6 +588,55 @@ font-weight: 600;
     background-color: #c98787;
 }
 
+.services .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 2fr));
+    gap: 1.5rem;
+    /* background: rgb(255, 255, 255);
+    align-items: center; */
+}
+
+.services .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+}
+
+.services .box-container .box i {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+}
+
+.services .box-container .box h3 {
+    font-size: 2.2rem;
+}
+
+.services .box-container .box p {
+    color: var(--light-color);
+    font-size: 1.4rem;
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.services .box-container .box:hover {
+    background-color: #13121293;
+}
+
+.services .box-container .box:hover h3 {
+    color: white;
+}
+
+.services .box-container .box:hover p {
+    color: #eee;
+}
+
+.services .box-container .box:hover i {
+    color: #eee;
+}
 
 /* REVIEWS SECTION CSS */
 
