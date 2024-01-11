@@ -587,11 +587,12 @@ font-weight: 600;
 
 .featured .featured-slider .box img {
     /* height: 13rem; */
+    transform: scale(.9);
     width: 100%;
 }
 
 .featured .featured-slider .box:hover img {
-    transform: scale(.9);
+    transform: scale(1);
 }
 
 .featured .featured-slider .box h3 {
